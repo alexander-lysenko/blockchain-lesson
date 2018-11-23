@@ -7,18 +7,21 @@
     <link rel="stylesheet" href="style.css" type="text/css">
     <title>Title</title>
 </head>
-<body class="bg-light h-100" style="zoom:1.5">
+<body class="bg-light h-100">
 <div class="container">
     <a href="index8.html" class="next-page" style="visibility: hidden"></a>
     <div class="row align-items-center mt-5">
+        <a href="index6.html">
+            <i class="material-icons" style="font-size: 36px; padding: 192px 0;">navigate_before</i>
+        </a>
         <div class="mx-auto col-sm-8">
             <div class="card">
                 <div class="card-body">
                     <h4 class="card-title">Мини игра с хэшами</h4>
                     <p class="card-text">Можете попробовать.
-                        Вручную искать начинающийся на 10 нулей хеш слишком долго, так что давайте для интереса поищем
-                        на два.
-                        В поле «Nonce» ниже пишите что угодно.
+                        Вручную искать начинающийся на 10 нулей хеш слишком долго,
+                        так что давайте для интереса поищем на два.
+                        В текстовое поле ниже ниже пишите что угодно.
                         Как только хеш введенного вами будет начинаться на «00» — игра останавливается.
                     </p>
                     <form action="">
@@ -29,7 +32,7 @@
                         </div>
                         <div class="form-group well-sm">
                             <p>Хеш:</p>
-                            <div class="alert alert-info" id="hash_output"></div>
+                            <div class="alert alert-info" id="hash_output" style="text-transform: uppercase"></div>
                         </div>
                         <div class="form-group well-sm">
                             <p>Число попыток:</p>
@@ -40,6 +43,9 @@
                 </div>
             </div>
         </div>
+        <a href="index8.html">
+            <i class="material-icons" style="font-size: 36px; padding: 192px 0;">navigate_next</i>
+        </a>
     </div>
 </div>
 
@@ -47,7 +53,7 @@
 <script src="assets/jquery.min.js"></script>
 <script src="assets/material/js/material.min.js"></script>
 
-<script src="index.js"></script>
+<script src="hash_game.js"></script>
 <script src="sha256.min.js"></script>
 </body>
 </html>
