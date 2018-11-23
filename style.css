@@ -5,3 +5,11 @@
 .container {
     text-align: justify;
 }
+body{
+    zoom: 2;
+}
+img.attach {
+    max-width: 90%;
+    display: block;
+    margin: auto;
+}

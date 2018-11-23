@@ -1,10 +1,10 @@
-$(function() {
+$(function () {
     var game_over = false;
     var attempts = 0;
     var $hash_input = $("#hash_input");
     var $hash_output = $("#hash_output");
     var $hash_attempts = $("#hash_attempts");
-    $hash_input.bind("keyup", function(e) {
+    $hash_input.bind("keyup", function (e) {
         if (game_over) return;
 
         var new_hash_input = $hash_input.val();
@@ -22,4 +22,8 @@ $(function() {
             }
         }
     });
+});
+
+$(document).on('click', function () {
+    window.location.href = $('.next-page').attr('href');
 });
