@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="assets/material/css/material.min.css" type="text/css">
+    <link rel="stylesheet" href="assets/material-icons/iconfont/material-icons.css" type="text/css">
+    <link rel="stylesheet" href="style.css" type="text/css">
+    <title>Title</title>
+</head>
+<body class="bg-light h-100" style="zoom:1.5">
+<div class="container">
+    <div class="row align-items-center mt-5">
+        <div class="mx-auto col-sm-8">
+            <div class="card">
+                <div class="card-body">
+                    <h4 class="card-title">Мини игра с хэшами</h4>
+                    <p class="card-text">Можете попробовать.
+                        Вручную искать начинающийся на 10 нулей хеш слишком долго, так что давайте для интереса поищем
+                        на два.
+                        В поле «Nonce» ниже пишите что угодно.
+                        Как только хеш введенного вами будет начинаться на «00» — игра останавливается.
+                    </p>
+                    <form action="">
+                        <div class="form-group">
+                            <label for="hash_input" class="floating-label">Вводите любые символы, пока их хеш не будет
+                                начинаться на «00»:</label>
+                            <textarea id="hash_input" name="hashstring" class="form-control" rows="4"></textarea>
+                        </div>
+                        <div class="form-group well-sm">
+                            <p>Хеш:</p>
+                            <div class="alert alert-info" id="hash_output"></div>
+                        </div>
+                        <div class="form-group well-sm">
+                            <p>Число попыток:</p>
+                            <div class="alert alert-info" id="hash_attempts"></div>
+                        </div>
+
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Add Material JavaScript on top of Bootstrap JavaScript -->
+<script src="assets/jquery.min.js"></script>
+<script src="assets/material/js/material.min.js"></script>
+
+<script src="index.js"></script>
+<script src="sha256.min.js"></script>
+</body>
+</html>
