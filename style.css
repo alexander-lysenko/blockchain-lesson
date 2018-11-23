@@ -2,3 +2,6 @@
     box-shadow: unset;
     border: 1px solid grey;
 }
+.container {
+    text-align: justify;
+}

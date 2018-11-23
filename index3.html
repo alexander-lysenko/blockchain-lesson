@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="assets/material/css/material.min.css" type="text/css">
+    <link rel="stylesheet" href="assets/material-icons/iconfont/material-icons.css" type="text/css">
+    <link rel="stylesheet" href="style.css" type="text/css">
+    <title>Title</title>
+</head>
+<body class="bg-light h-100" style="zoom:1.5">
+<div class="container">
+    <a href="index4.html" class="next-page" style="visibility: hidden"></a>
+    <div class="row align-items-center mt-5">
+        <div class="mx-auto col-sm-8">
+            <h3 style="text-align: center">Это гениально! Нам поможет хэш.</h3>
+            <div class="card-text">
+                <div>
+                    В прошлом году Свят ходил на курсы по программированию, где ему рассказали про хеширование.
+                    Он помнит, что любую строку можно превратить в однозначный набор символов — хеш,
+                    и изменение любого символа строки полностью изменит его.
+                </div>
+                <div style="margin: 25px 10% 25px 10%;">
+                    <div class="row">
+                        <div class="col-sm-2">СТРОКА:</div>
+                        <div class="col-sm-10 text-success">СВЯТОСЛАВ</div>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-2">ХЕШ:</div>
+                        <div class="col-sm-10 text-success" style="text-transform: uppercase;word-wrap: break-word;">adc83d350a14509181fb6464bae9c660a3f3ff3c3dc7b2d669b7fcba994d3a3c</div>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-2">СТРОКА:</div>
+                        <div class="col-sm-10 text-danger">СВЯТОСЛАВ.</div>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-2">ХЕШ:</div>
+                        <div class="col-sm-10 text-danger" style="text-transform: uppercase;word-wrap: break-word;">8a7bcb37d6a969e29ed5d4a2822647e166a6c06417722ac06bbe90768b722366</div>
+                    </div>
+                </div>
+                <div>
+                    Добавление точки в конце изменило итоговый хеш до неузнаваемости — этим можно воспользоваться.
+                </div>
+                <div>
+                    Свят берет общеизвестный хеш SHA-256 и хеширует им каждую запись, дописывая результат в конце.
+                    Теперь Свят может удостовериться, что его записи никто не изменял, захешировав их заново и сравнив с зелёненьким.
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Add Material JavaScript on top of Bootstrap JavaScript -->
+<script src="assets/jquery.min.js"></script>
+<script src="assets/material/js/material.min.js"></script>
+
+<script src="index.js"></script>
+<script src="sha256.min.js"></script>
+</body>
+</html>
