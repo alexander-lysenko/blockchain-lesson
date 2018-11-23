@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="assets/material/css/material.min.css" type="text/css">
+    <link rel="stylesheet" href="assets/material-icons/iconfont/material-icons.css" type="text/css">
+    <link rel="stylesheet" href="style.css" type="text/css">
+    <title>Title</title>
+</head>
+<body class="bg-light h-100" style="zoom:1.5">
+<div class="container">
+    <a href="index20.html" class="next-page" style="visibility: hidden"></a>
+    <div class="row align-items-center mt-5">
+        <div class="mx-auto col-sm-8">
+            <h3 style="text-align: center">Блоки — основа блокчейна</h3>
+            <div class="card-text">
+                <div class="row">
+                    <p>
+                        Каждый работающий компьютер в сети выбирает из общего пула любые транзакции, которые ему
+                        нравятся. Обычно просто по самой высокой комиссии, которую он может на ней заработать. Так он
+                        набирает себе транзакции, пока их суммарный размер не достигнет обговорённого лимита. В Биткоине
+                        этот лимит на размер блока равен 1 Мб (после SegWit2x будет 2 Мб), а в Биткоин Кеше — 8 Мб.
+                    </p>
+                    <p>
+                        Весь блокчейн по сути и есть список таких блоков, где каждый ссылается на предыдущий. По нему
+                        можно отследить любую транзакцию за всю историю, разматывая блокчейн хоть до самой первой
+                        записи. Именно этот список и весит сейчас сотни гигабайт и должен быть полностью скачан на все
+                        компьютеры, которые хотят принимать участие в работе сети (но чтобы просто создавать транзакции
+                        и переводить деньги, это не обязательно). Скачивается он так же со всех ближайших компьютеров
+                        сети, как будто вы качаете сериал с торрентов, только новые новые серии в нём выходят каждые 10
+                        минут.
+                    </p>
+                    <img src="images/19.png" style="width: 100%;">
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Add Material JavaScript on top of Bootstrap JavaScript -->
+<script src="assets/jquery.min.js"></script>
+<script src="assets/material/js/material.min.js"></script>
+
+<script src="index.js"></script>
+<script src="sha256.min.js"></script>
+</body>
+</html>

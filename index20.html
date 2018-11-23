@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="assets/material/css/material.min.css" type="text/css">
+    <link rel="stylesheet" href="assets/material-icons/iconfont/material-icons.css" type="text/css">
+    <link rel="stylesheet" href="style.css" type="text/css">
+    <title>Title</title>
+</head>
+<body class="bg-light h-100" style="zoom:1.5">
+<div class="container">
+    <a href="index21.html" class="next-page" style="visibility: hidden"></a>
+    <div class="row align-items-center mt-5">
+        <div class="mx-auto col-sm-8">
+            <h3 style="text-align: center">Блоки — основа блокчейна</h3>
+            <div class="card-text">
+                <div class="row">
+                    <p>
+                        Набрав себе транзакций из пула компьютер начинает составлять из них такой же неподделываемый
+                        список, как мы в начале поста на доске у себя дома. Только делает он его в виде дерева —
+                        хеширует записи попарно, потом результат еще раз попарно и так пока не останется лишь один хеш —
+                        корень дерева (Дерево Меркла), который и добавляется в блок.
+                    </p>
+                    <img src="images/19.png" style="width: 100%;">
+                    <p>
+                        Так как актуальный блокчейн уже скачан, наш компьютер точно знает какой в нём сейчас последний
+                        блок. Ему остается только добавить ссылку на него в заголовок блока, захешировать всё это и
+                        сообщить всем остальным компьютерам сети «смотрите, я сделал новый блок, давайте добавим его в
+                        наш блокчейн».
+                    </p>
+                    <p>
+                        Остальные должны проверить, что блок построен по всем правилам и что мы не добавили туда лишних
+                        транзакций, а затем добавить к себе в цепочки. Теперь все транзакции в нём подтверждены,
+                        блокчейн увеличен на один блок и всё идет хорошо, не так ли?
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Add Material JavaScript on top of Bootstrap JavaScript -->
+<script src="assets/jquery.min.js"></script>
+<script src="assets/material/js/material.min.js"></script>
+
+<script src="index.js"></script>
+<script src="sha256.min.js"></script>
+</body>
+</html>

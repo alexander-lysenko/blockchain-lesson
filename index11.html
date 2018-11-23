@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="assets/material/css/material.min.css" type="text/css">
+    <link rel="stylesheet" href="assets/material-icons/iconfont/material-icons.css" type="text/css">
+    <link rel="stylesheet" href="style.css" type="text/css">
+    <title>Title</title>
+</head>
+<body class="bg-light h-100" style="zoom:1.5">
+<div class="container">
+    <a href="index12.html" class="next-page" style="visibility: hidden"></a>
+    <div class="row align-items-center mt-5">
+        <div class="mx-auto col-sm-8">
+            <h3 style="text-align: center">Транзакции</h3>
+            <div class="card-text">
+                <div class="row">
+                    <p>
+                        Покупая мивину в шерифе, вы вводите пин-код от своей карты, разрешая магазину спросить у
+                        банка есть ли у вас на счету 35 рублей. Другими словами, вы подписываете своим пин-кодом
+                        транзакцию на 35 рублей, которую банк подтверждает или отклоняет.
+                    </p>
+                    <p>
+                        Наши записи типа «Занял Саше 500 рублей» — тоже транзакции. Но у нас нет банка, авторизующего
+                        автора транзакций. Как нам проверить, что Саша втихую не добавил запись «Макс должен Святу
+                        100500 рублей»?
+                    </p>
+                    <p>
+                        В блокчейне для этого используется механизм публичных и приватных ключей, айтишники давно
+                        используют их для авторизации в том же SSH.
+                    </p>
+                    <p>
+                        Коротко о том, как работает эта сложная, но красивая математика: вы у себя на компьютере
+                        генерируете пару длинных простых чисел — публичный и приватный ключ. Приватный ключ считается
+                        супер-секретным, потому что может расшифровать то, что зашифровано публичным. Но наоборот тоже
+                        работает. Если вы расскажете публичный ключ всем друзьям, они смогут зашифровать им любое
+                        сообщение так, что прочитать его сможете только вы, так как владеете приватным. Но кроме этого у
+                        публичного ключа есть полезный эффект — с помощью него можно проверить, что данные были
+                        зашифрованы именно вашим приватным ключом, не расшифровывая при этом сами данные.
+                    </p>
+                    <img src="images/11.png" style="width: 100%;">
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Add Material JavaScript on top of Bootstrap JavaScript -->
+<script src="assets/jquery.min.js"></script>
+<script src="assets/material/js/material.min.js"></script>
+
+<script src="index.js"></script>
+<script src="sha256.min.js"></script>
+</body>
+</html>

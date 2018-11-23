@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="assets/material/css/material.min.css" type="text/css">
+    <link rel="stylesheet" href="assets/material-icons/iconfont/material-icons.css" type="text/css">
+    <link rel="stylesheet" href="style.css" type="text/css">
+    <title>Title</title>
+</head>
+<body class="bg-light h-100" style="zoom:1.5">
+<div class="container">
+    <a href="index18.html" class="next-page" style="visibility: hidden"></a>
+    <div class="row align-items-center mt-5">
+        <div class="mx-auto col-sm-8">
+            <h3 style="text-align: center">Проблема синхронизации</h3>
+            <div class="card-text">
+                <div class="row">
+                    <p>
+                        Для децентрализованной сети, в которой никому нельзя доверять, эта проблема стоит особенно
+                        остро. Вот как вы убедитесь, что одна транзакция точно была раньше другой? Попросите отправителя
+                        вшивать в неё время отправки, не так ли? Но вспомните — никому нельзя доверять, даже
+                        отправителю. Время на всех компьютерах обязательно будет отличаться и нет способа их
+                        гарантировано синхронизировать. Копия блокчейна хранится на каждом компьютере сети и каждый
+                        участник доверяет только ей.
+                    </p>
+                    <p>
+                        Как же убедиться, что одна транзакция была раньше другой?
+                    </p>
+                    <img src="images/16.png" style="width: 100%;">
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Add Material JavaScript on top of Bootstrap JavaScript -->
+<script src="assets/jquery.min.js"></script>
+<script src="assets/material/js/material.min.js"></script>
+
+<script src="index.js"></script>
+<script src="sha256.min.js"></script>
+</body>
+</html>

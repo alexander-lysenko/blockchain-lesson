@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="assets/material/css/material.min.css" type="text/css">
+    <link rel="stylesheet" href="assets/material-icons/iconfont/material-icons.css" type="text/css">
+    <link rel="stylesheet" href="style.css" type="text/css">
+    <title>Title</title>
+</head>
+<body class="bg-light h-100" style="zoom:1.5">
+<div class="container">
+    <a href="index22.html" class="next-page" style="visibility: hidden"></a>
+    <div class="row align-items-center mt-5">
+        <div class="mx-auto col-sm-8">
+            <h3 style="text-align: center">Кто же первый ?</h3>
+            <div class="card-text">
+                <div class="row">
+                    <p>
+                        А вот и нет. В сети одновременно работают тысячи компьютеров, и как только они соберут новый
+                        блок, они почти одновременно ринутся сообщать всем, что их блок был создан первым. А из
+                        предыдущего раздела мы уже знаем, что в децентрализованной сети невозможно доказать кто
+                        действительно был первым.
+                    </p>
+                    <img src="images/21.png" style="width: 100%;">
+                    <p>
+                        <i style="display: block;line-height: 1.4; text-align: center;font-size: 130%;    width: 90%;
+                                margin: 48px auto; font-style: italic; padding: 1px 22px 10px; box-sizing: border-box;">
+                            Поэтому для включения блока в цепочку компьютеры должны решить какую-то сложную задачку,
+                            которая
+                            займет у них определенное время.
+                        </i>
+                    </p>
+                    <p>
+                        Но если для человека сложная задача — это спланировать отпуск, чтобы и на майские праздники
+                        попал, и билеты на море недорого, то для компьютера — это добавить в конец блока такое число
+                        (nonce), чтобы в результате хеш SHA-256 для всего блока начинался, скажем, на 10 нулей. Это и
+                        есть та задача, которую надо решить, чтобы добавить блок в сеть Bitcoin. Для других сетей задачи
+                        могут отличаться.
+                    </p>
+                    <p>
+                        Так мы приходим к понятию майнинга, на котором все так помешаны в последние годы.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Add Material JavaScript on top of Bootstrap JavaScript -->
+<script src="assets/jquery.min.js"></script>
+<script src="assets/material/js/material.min.js"></script>
+
+<script src="index.js"></script>
+<script src="sha256.min.js"></script>
+</body>
+</html>
